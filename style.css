@@ -1,0 +1,29 @@
+body {
+}
+
+.leftContent {
+  width: 40%;
+  float: left;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 50px;
+}
+
+.leftContent section {
+  flex: auto;
+}
+
+.fullName {
+}
+
+.nav {
+  border-top: solid black 1px;
+}
+
+a {
+  text-decoration: none;
+}

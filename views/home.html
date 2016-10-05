@@ -1,0 +1,29 @@
+<h1 class="pageTitle">CREATE YOUR PROFILE</h1>
+
+<header class="header">
+  <a class="search"><img</a>
+  <h1>DevMountain</h1>
+
+  <nav class="menu">
+    <a ui-sref="profile">Profile Settings</a>
+  </nav>
+</header>
+
+<div class="content">
+  <div class="leftContent">
+    <p>Welcome to <a href="">DevMountain</a> Social</p>
+    <p>Add Some Information So Friends Can Find You</p>
+    <input ng-model="profiles.fullName" class="fullName input" placeholder="Full Name" />
+    <input ng-model="profiles.tagline" class="tagline input" placeholder="Tagline" />
+    <input ng-model="profiles.profileImage" class="profileImage input" placeholder="Profile Image URL" />
+    <input ng-model="profiles.bio" class="bio input" placeholder="bio" />
+    <button  ng-click="addData()" ui-sref="landing" class="button">Save Changes</button>
+  </div>
+
+  <div class="rightContent">
+    <div class="trangles">
+      <div class="triangleUp"></div>
+      <div class="triangleDwn"></div>
+    </div>
+  </div>
+</div>

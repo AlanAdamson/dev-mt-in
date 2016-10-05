@@ -1,29 +1,85 @@
-body {
-}
-
-.leftContent {
-  width: 40%;
-  float: left;
-}
-
-.leftContent {
+html, body{
   display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  padding: 50px;
+  justify-content: center;
 }
 
-.leftContent section {
-  flex: auto;
+.wrapper{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
 }
 
-.fullName {
+.header{
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
 }
 
-.nav {
+.content{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.leftContent{
+  width: 350px;
+}
+
+.rightContent{
+  width: 450px;
+}
+
+.nav{
+  margin: 50px;
   border-top: solid black 1px;
 }
 
-a {
+a{
   text-decoration: none;
+}
+
+.trangles{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangleUp{
+  border-bottom: 250px solid #ccc;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  width: 0;
+  height: 0;
+  transform: rotate(5deg);
+  z-index: 10;
+  position: absolute;
+  margin-left: 5px;
+}
+.triangleDwn{
+  border-bottom: 250px solid #74fdf2;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  width: 0;
+  height: 0;
+  transform: rotate(175deg);
+  z-index: 20;
+  /*position: absolute;*/
+  margin-top: 300px;
+}
+
+.input{
+  width: 300px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.button{
+  border: none;
+  background-color: #f90;
+  width: 315px;
+  height: 30px;
+  margin: 5px;
 }

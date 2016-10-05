@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="devMtIn">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,44 +8,26 @@
 	<title>DevMtin</title>
 </head>
 
-<body>
-  <main>
+<body ng-controller="cntrlr">
 
-    <header>
-      <button class="search">search</button>
-      <h1>DevMountain</h1>
+  <div class="wrapper">
 
-      <nav class="menu">
-        <a href="profile_settings.html">Profile Settings</a>
-      </nav>
-    </header>
-
-    <section class="content">
-
-      <section class="leftContent">
-        <p>Welcome to <a href="">DevMountain</a> Social</p>
-        <p>Add Some Information So Friends Can Find You</p>
-
-        <input class="fullName" placeholder="Full Name" />
-        <input class="tagline" placeholder="Tagline" />
-        <input class="profileImage" placeholder="Profile IMage URL" />
-        <input class="Bio" placeholder="Bio" />
-        <button>Save Changes</button>
-      </section>
-
-      <section class="rightContent">
-        <img src="http://placehold.it/350x350" />
-      </section>
-
-
-    </section>
+      <ui-view></ui-view>
 
     <nav class="nav">
-      <a href="">View Friends</a>
-      <a href="">Find Friends</a>
-      <a href="">Update Profile</a>
+      <a ui-sref="friends">View Friends</a>
+      <a ui-sref="find">Find Friends</a>
+      <a ui-sref="update">Update Profile</a>
     </nav>
 
-  </main>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/cntrlr.js"></script>
+  <script src="/js/srvces.js"></script>
+
 </body>
 </html>
